@@ -1,6 +1,6 @@
 ```mermaid
 flowchart LR
-    subgraph wasmVision engine
+    subgraph motor wasmVision
         Capture
         Runtime[WASM Runtime]
         Capture--frame-->Runtime
@@ -8,11 +8,11 @@ flowchart LR
         Runtime<-->OpenCV
         Config
         Datastore
-        OpenCV<--DNN-->DNN[Mosaic - Fast Neural Style Transfer Model]
+        OpenCV<--DNN-->DNN[Mosaic - modelo de transferencia rápida de estilo neuronal]
     end
-    subgraph wasmVision processors
+    subgraph procesadores wasmVision
         Runtime--frame-->ollama.wasm
-        Runtime--frame-->mosaic.wasm
+        Runtime--frame-->styletransfer.wasm
         Runtime--frame-->captions.wasm
     end
     ollama.wasm--frame-->ollama
