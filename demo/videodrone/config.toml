@@ -1,0 +1,17 @@
+[main]
+logging = "warn"
+source = "udp://127.0.0.1:6789"
+capture = "ffmpeg"
+cuda-enable = false
+
+[processing]
+pipeline = [
+    "facedetectyn.wasm"
+]
+
+[models]
+download = true
+
+[server]
+mcp-enable = false
+mcp-port = ":5001"

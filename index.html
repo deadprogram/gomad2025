@@ -1,0 +1,700 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+
+<title>Ojos que ven - GoMAD Mayo 2025</title>
+
+<meta name="description" content="Ojos que ven: Visión Artificial con WebAssembly, Go, y TinyGo - GoMAD Mayo 2025">
+<meta name="author" content="Ron Evans">
+
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<link rel="stylesheet" href="css/reveal.css">
+<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+<!-- For syntax highlighting -->
+<link rel="stylesheet" href="lib/css/tomorrow.css">
+
+<link rel="stylesheet" href="css/hybrid.css">
+
+<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+<script>
+	document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+</script>
+
+<!--[if lt IE 9]>
+<script src="lib/js/html5shiv.js"></script>
+<![endif]-->
+</head>
+
+<body>
+	<div class="reveal">
+
+	<!-- Any section element inside of this container is displayed as a slide -->
+	<div class="slides">
+		<section>
+			<section>
+				<h1>Ojos que ven</h1>
+				<h1>Visión Artificial con WebAssembly, Go, y TinyGo</h1>
+				<h2>GoMAD Mayo 2025</h2>
+				<h2>Ron Evans - @deadprogram</h2>
+				<h3>fed: @deadprogram@social.tinygo.org</h3>
+				<h3>bsky: @deadprogram.com</h3>	
+			</section>
+		</section>
+
+		<section>
+			<h2>Ron Evans (@deadprogram)</h2>
+		</section>
+
+		<section>
+			<h1>Tecnólogo en alquiler</h1>
+		</section>
+
+		<section>
+			<h1>tecnólogo <u>en alquiler</u></h1>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/thg-logo.png">
+			</div>
+			<h3>hybridgroup.com</h3>
+		</section>
+
+		<section>
+			<h2>El software que pone</h2>
+			<h2>tu hardware para trabajar</h2>
+		</section>
+		
+		<section>
+			<h2>Proyectos de código abierto</h2>
+		</section>
+  
+		<section>
+			<div class="image-container">
+			  <img src="images/tinygo-logo.png">
+			</div>
+			<h3>tinygo.org</h3>          
+		</section>
+
+		<section>
+			<div class="image-container">
+			  <img src="images/gocvlogo.jpg">
+			</div>
+			<h3>GoCV.io</h3>          
+		</section>
+
+		<section>
+			<h2>¿Visión artificial usando WebAssembly?</h2>
+		</section>
+
+		<section>
+			<h2>Sistemas industriales de visión artificial.</h2>
+		</section>
+
+		<section>
+			<section>
+				<h2>Dispositivos Linux integrados</h2>
+			</section>
+
+			<section>
+				<h2>Dispositivos embedded</h2>
+			</section>
+
+			<section>
+				<h2>Clúster de computación</h2>
+			</section>
+		</section>
+
+		<section>
+			<section>
+				<h2>Agricultura</h2>
+			</section>
+			<section>
+				<h2>Transporte</h2>
+			</section>
+			<section>
+				<h2>Energía</h2>
+			</section>
+			<section>
+				<h2>Seguridad</h2>
+			</section>
+			<section>
+				<h2>Fabricación</h2>
+			</section>
+			<section>
+				<h2>Minorista</h2>
+			</section>
+		</section>
+
+		<section>
+			<h2>Muchas aplicaciones de visión artificial tienen una estructura básica muy similar</h2>
+		</section>
+
+		<section>
+			<h2>muchas partes diferentes que integrar</h2>
+		</section>
+
+		<section>
+			<h2>difícil ejecutarlo en diferentes tipos de máquinas</h2>
+		</section>
+
+		<section>
+			<h2>difícil de actualizar</h2>
+		</section>
+
+		<section>
+			<h2>cierta necesidad de personalización</h2>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/wasmvision-logo.png">
+			</div>
+			<h2>wasmvision.com</h2>
+		</section>
+
+		<section>
+			<h2>Empezar con la visión artificial mediante WebAssembly</h2>
+		</section>
+
+		<section>
+			<h2>Capturar video</h2>
+		</section>
+
+		<section>
+			<h2>Procesarlo</h2>
+		</section>
+
+		<section>
+			<h2>guardarlo o transmitirlo</h2>
+		</section>
+
+		<section>
+			<h2>'wasmvision' interfaz de línea de comandos</h2>
+		</section>
+
+		<section>
+			<h2>El motor de wasmVision</h2>
+		</section>
+
+		<section>
+			<h2>Los procesadores wasmVision</h2>
+		</section>
+
+		<section>
+			<h2>El motor está escrito en Go</h2>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/opencv-logo.png">
+			</div>
+			<h2>OpenCV</h2>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/ffmpeg-logo.jpg">
+			</div>
+			<h2>FFmpeg</h2>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/gstreamer-logo.png">
+			</div>
+			<h2>GStreamer</h2>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/gocvlogo.jpg">
+			</div>  
+			<h2>GoCV</h2>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/wazero-logo.png">
+			</div>  
+			<h2>Wazero</h2>
+		</section>
+
+		<section>
+			<h2>Todo esto combinado en un binario enlazado estáticamente*</h2>
+			<h3>*ejecutando Linux sin GPU</h3>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/voltron___final_model_by_cosedimarco.jpg">
+			</div>  
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/wasmvision-arch.png">
+			</div>
+			<h2>La arquitectura de wasmVision</h2>
+		</section>
+
+		<section>
+			<h2>Los procesadores de wasmvision</h2>
+		</section>
+
+		<section>
+			<h2>Pueden escribir usando Go (TinyGo)</h2>
+		</section>
+
+		<section>
+			<h2>Rust</h2>
+		</section>
+
+		<section>
+			<h2>C</h2>
+		</section>
+
+		<section>
+			<h2>wasmCV</h2>
+			<h3><a target="_blank" href="https://wasmcv.org/">wasmcv.org</a></h3>
+		</section>
+
+		<section>
+			<h2>conjunto de interfaces WASM para visión artificial</h2>
+		</section>
+
+		<section>
+			<h2>definido usando wit (wasm interface type)</h2>
+		</section>
+
+		<section>
+			<h2>WIT es parte del modelo de componentes WASM</h2>
+		</section>
+
+		<section>
+			<h2>Sin embargo</h2>
+		</section>
+
+		<section>
+			<h2>wasmVision no utiliza el modelo de componentes WASM</h2>
+		</section>
+
+		<section>
+			<h2>utiliza WIT para generar documentación y wrappers de interfaz de cliente</h2>
+		</section>
+
+		<section>
+			<h2>wypes</h2>
+			<h3>github.com/orsinium-labs/wypes</h3>
+		</section>
+
+		<section>
+			<section>
+				<h2>cómo funciona la visión artificial</h2>
+			</section>
+
+			<section>
+				<div class="image-container">
+					<img src="images/mat-base.jpg">
+				</div>
+				<h2>Mat</h2>
+			</section>
+
+			<section>
+				<div class="image-container">
+					<img src="images/mat-2d3c.jpg">
+				</div>
+				<h2>RGB Mat</h2>
+			</section>
+
+			<section>
+				<div class="image-container">
+					<img src="images/mat-3d2c-float.jpg">
+				</div>
+				<h2>Multidimensional Mat</h2>
+			</section>
+
+			<section>
+				<div class="image-container">
+					<img src="images/how-gocv-works.png">
+				</div>
+				<h2>cómo funciona OpenCV/GoCV</h2>
+			</section>
+		</section>
+
+		<section>
+			<section>
+				<h2>cómo funciona wit</h2>
+			</section>
+
+			<section>
+				<h2>interfaces</h2>
+			</section>
+
+			<section>
+				<h2>tipos básicos</h2>
+			</section>
+
+			<section>
+				<h2>record</h2>
+			</section>
+
+			<section>
+				<h2>resource</h2>
+			</section>
+
+			<section>
+				<h2>world.wit</h2>
+				<h3><a target="_blank" href="https://github.com/wasmvision/wasmcv/blob/main/wit/world.wit">Ver el código</a></h3>
+			</section>
+
+			<section>
+				<h2>Todo se genera a partir de los archivos .wit</h2>
+			</section>
+		</section>
+
+		<section>
+			<h2>wasmCV Documentación</h2>
+			<h3><a target="_blank" href="https://wasmcv.org/docs/0.7.0/#a-idwasm_cv_mataimport-interface-wasmcvmat">Ver el código</a></h3>
+		</section>
+
+		<section>
+			<h2>wasmVision procesadores - go</h2>
+		</section>
+
+		<section>
+			<h3><code STYLE="text-transform:lowercase">package wasmcv</code></h3>
+		</section>
+
+		<section>
+			<h2>wit-bindgen-go</h2>
+			<h3>go.bytecodealliance.org</h3>
+		</section>
+
+		<section>
+			<section>
+			<pre><code class="bash">
+tinygo build -o blur.wasm -target=wasm-unknown --no-debug ./blur
+			</code></pre>
+			</section>
+		</section>			
+
+		<section>
+			<h2>Blur procesador (Go)</h2>
+			<h3><a target="_blank" href="https://github.com/wasmvision/wasmvision/blob/main/processors/blur/blur.go">Ver el código</a></h3>
+		</section>
+
+		<section>
+			<h2>Ejecutar el procesador Blur (Go)</h2>
+		</section>
+
+		<section data-background-image="http://localhost:8080" data-background-size="contain" data-state="stats">
+		</section>
+
+		<section>
+			<h2>wasmVision procesadores - rust</h2>
+		</section>
+
+		<section>
+			<h3><code STYLE="text-transform:lowercase">crate wasmcv</code></h3>
+		</section>
+
+		<section>
+			<h2>wit-bindgen</h2>
+			<h3>github.com/bytecodealliance/wit-bindgen</h3>
+		</section>
+
+		<section>
+			<section>
+			<pre><code class="shell">
+cargo build --target wasm32-unknown-unknown --release
+			</code></pre>
+			</section>
+		</section>			
+
+		<section>
+			<h2>Blur procesador (Rust)</h2>
+			<h3><a target="_blank" href="https://github.com/wasmvision/wasmvision/blob/main/processors/blurrs/src/lib.rs">Ver el código</a></h3>
+		</section>
+
+		<section>
+			<h2>Ejecutar el procesador Blur (Rust)</h2>
+		</section>
+
+		<section data-background-image="http://localhost:8080" data-background-size="contain">
+		</section>
+
+		<section>
+			<h2>wasmVision procesadores - c</h2>
+		</section>
+
+		<section>
+			<h3><code STYLE="text-transform:lowercase">#include "wasmcv/imports.h"</code></h3>
+		</section>
+
+		<section>
+			<h2>wit-bindgen</h2>
+			<h3>github.com/bytecodealliance/wit-bindgen</h3>
+		</section>
+
+		<section>
+			<section>
+			<pre><code class="shell">
+/opt/wasi-sdk/bin/clang --target=wasm32-unknown-unknown -O3 \
+        --sysroot="${WASI_LIBC_SYSROOT}/lib/wasi-libc/sysroot" \
+        -z stack-size=4096 -Wl,--initial-memory=65536 \
+        -I$WASMCV_C_COMPONENTS_PATH -I$WASMVISION_C_COMPONENTS_PATH \
+        -o ../blurc.wasm process.c \
+        $WASMCV_C_COMPONENTS_PATH/wasmcv/imports.c $WASMCV_C_COMPONENTS_PATH/wasmcv/imports_component_type.o \
+        $WASMVISION_C_COMPONENTS_PATH/wasmvision/platform.c $WASMVISION_C_COMPONENTS_PATH/wasmvision/platform_component_type.o \
+        -Wl,--export=process \
+        -Wl,--export=__data_end -Wl,--export=__heap_base \
+        -Wl,--strip-all,--no-entry \
+        -Wl,--unresolved-symbols=ignore-all \
+        -nostdlib \
+			</code></pre>
+			</section>
+		</section>			
+
+		<section>
+			<h2>Blur procesador (C)</h2>
+			<h3><a target="_blank" href="https://github.com/wasmvision/wasmvision/blob/main/processors/blurc/process.c">Ver el código</a></h3>
+		</section>
+
+		<section>
+			<h2>Ejecutar el procesador Blur (C)</h2>
+		</section>
+
+		<section data-background-image="http://localhost:8080" data-background-size="contain">
+		</section>
+
+		<section>
+			<h2>Procesadores</h2>
+		</section>
+
+		<section>
+			<h2>Proporcionar bloques de construcción básicos</h2>
+		</section>
+
+		<section>
+			<h2>Se pueden conectar entre sí</h2>
+		</section>
+
+		<section>
+			<h2>Puedes crear tus propios procesadores</h2>
+		</section>
+
+		<section>
+			<h2>Un recorrido rápido por algunos procesadores incluidos</h2>
+		</section>
+
+		<section>
+			<h2>asciify procesador (Go)</h2>
+			<h3><a target="_blank" href="https://github.com/wasmvision/wasmvision/blob/main/processors/asciify/asciify.go">Ver el código</a></h3>
+		</section>
+
+		<section>
+			<h2>Ejecutar el procesador asciify</h2>
+		</section>
+
+		<section data-background-image="http://localhost:8080" data-background-size="contain">
+		</section>
+
+		<section>
+			<section>
+				<h2>plataforma wasmVision</h2>
+			</section>
+			<section>
+				<h2>registros</h2>
+			</section>
+			<section>
+				<h2>configuración</h2>
+			</section>
+			<section>
+				<h2>http</h2>
+			</section>
+			<section>
+				<h2>almacén de datos</h2>
+			</section>
+		</section>
+
+		<section>
+			<h2>Subtítulos creativos</h2>
+		</section>
+
+		<section>
+			<h2>Generación de subtítulos en vivo</h2>
+			<h2>con un toque artístico</h2>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/wasmvision-ollama.png">
+			</div>
+			<h3>arquitectura de Subtítulos creativos</h3>
+		</section>
+
+		<section>
+			<h2>config.toml</h2>
+			<h3><a target="_blank" href="https://github.com/deadprogram/wasmio2025/blob/main/demo/creativecaptions/config.toml">Ver la configuración</a></h3>
+		</section>
+
+		<section>
+			<h2>ollama procesador (Go)</h2>
+			<h3><a target="_blank" href="https://github.com/wasmvision/wasmvision/blob/main/processors/ollama/ollama.go">Ver el código</a></h3>
+		</section>
+
+		<section>
+			<h2>mosaic procesador (Go)</h2>
+			<h3><a target="_blank" href="https://github.com/wasmvision/wasmvision/blob/main/processors/mosaic/mosaic.go">Ver el código</a></h3>
+		</section>
+
+		<section>
+			<h2>captions procesador (Go)</h2>
+			<h3><a target="_blank" href="https://github.com/wasmvision/wasmvision/blob/main/processors/captions/captions.go">Ver el código</a></h3>
+		</section>
+
+		<section>
+			<h2>Ejecutar Subtítulos creativos</h2>
+		</section>
+
+		<section data-background-image="http://localhost:8080" data-background-size="contain">
+		</section>
+
+		<section>
+			<h2>Videodrone</h2>
+		</section>
+
+		<section>
+			<h2>Estación de control de vuelo con seguimiento facial<br>
+				utilizando un modelo de aprendizaje automático</h2>
+		</section>
+
+		<section>
+			<h2>DJI Tello drone</h2>
+		</section>
+
+		<section>
+			<h2>Dualshock 4 joystick</h2>
+		</section>
+
+		<section>
+			<h2>Mira el hardware</h2>
+		</section>
+
+		<section data-background-image="http://localhost:8080" data-background-size="contain">
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/gobot-logo.png">
+			</div>
+			<h2>Gobot</h2>
+		</section>
+
+		<section>
+			<h2>YuNet Modelo de aprendizaje profundo de detección de rostros</h2>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/how-dnn-facedetect-works.png">
+			</div>
+			<h2>Cómo funcionan los modelos de visión artificial</h2>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/videodrone-arch.png">
+			</div>
+			<h2>arquitectura de Videodrone</h2>
+		</section>
+
+		<section>
+			<h2>config.toml</h2>
+			<h3><a target="_blank" href="https://github.com/deadprogram/wasmio2025/blob/main/demo/videodrone/config.toml">Ver la configuración</a></h3>
+		</section>
+
+		<section>
+			<h2>facedetectyn procesador (Go)</h2>
+			<h3><a target="_blank" href="https://github.com/wasmvision/wasmvision/blob/main/processors/facedetectyn/facedetect.go">Ver el código</a></h3>
+		</section>
+
+		<section>
+			<h2>videodrone código</h2>
+			<h3><a target="_blank" href="https://github.com/deadprogram/wasmio2025/blob/main/demo/videodrone/main.go">Ver el código</a></h3>
+		</section>
+
+		<section>
+			<h2>videodrone vuelo</h2>
+		</section>
+
+		<section data-background-image="http://localhost:8080" data-background-size="contain">
+		</section>
+
+		<section>
+			<h2>¿Fue divertido?</h2>
+		</section>
+
+		<section>
+			<h2>version 0.4 available now!</h2>
+		</section>
+
+		<section>
+			<h2>wasmvision.com</h2>
+			<h3>fed: @wasmvision@mastodon.social</h3>
+			<h3>bsky: @wasmvision.com</h3>
+		</section>
+
+		<section>
+			<h1>¡Gracias!</h1>
+			<h2>@deadprogram</h2>
+			<h2>Tecnólogo en alquiler</h2>
+			<h3>fed: @deadprogram@social.tinygo.org</h3>
+			<h3>bsky: @deadprogram.com</h3>
+		</section>	
+	  </div>
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.min.js"></script>
+	<script src="js/hybrid.js"></script>
+
+	<script>
+
+	  // Full list of configuration options available here:
+	  // https://github.com/hakimel/reveal.js#configuration
+	  Reveal.initialize({
+		controls: true,
+		progress: true,
+		history: true,
+		center: true,
+
+		// 16:9 aspect ratio
+		width: 1280,
+		height: 720,
+
+		theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+		transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+		// Optional libraries used to extend on reveal.js
+		dependencies: [
+		  { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+		  { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+		  { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+		  { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+		  { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+		  { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+		]
+	  });
+	</script>
+
+  </body>
+</html>
