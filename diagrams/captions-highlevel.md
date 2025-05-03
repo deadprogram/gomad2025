@@ -23,7 +23,7 @@ Capture--frame-->ollama.wasm
 ollama.wasm-->http
 http--http REST API-->ollama
 subgraph ollama
-    llava[LLaVA - Large Language and Vision Assistant Model]
+    vlm[Vision Language Model - LLaVA, Gemma 3, etc]
 end
 ollama.wasm--prompt result-->Datastore
 
@@ -33,7 +33,7 @@ ollama.wasm--prompt result-->Datastore
 flowchart LR
 
 subgraph motor wasmVision
-    OpenCV<--DNN-->DNN[Mosaic - modelo de transferencia rápida de estilo neuronal]
+    OpenCV<--DNN-->DNN[Modelo de transferencia rápida de estilo neuronal - mosaic, pointilism, etc]
 end
 
 styletransfer.wasm-->OpenCV
@@ -66,13 +66,13 @@ captions.wasm--frame-->Output
 subgraph motor wasmVision
     Capture
     Capture<-->OpenCV
-    OpenCV<--DNN-->DNN[Mosaic - modelo de transferencia rápida de estilo neuronal]
+    OpenCV<--DNN-->DNN[Modelo de transferencia rápida de estilo neuronal - mosaic, pointilism, etc]
     http
     Datastore
     Output
 end
 subgraph ollama
-    llava[LLaVA - Large Language and Vision Assistant Model]
+    vlm[Vision Language Model - LLaVA, Gemma 3, etc]
 end
 
 Capture--frame-->ollama.wasm
