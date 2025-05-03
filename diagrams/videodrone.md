@@ -9,7 +9,7 @@ subgraph videodrone
         videostream
     end
 end
-subgraph wasmVision engine
+subgraph motor wasmVision
     videostream<--UDP-->Capture
     Runtime[WASM Runtime]
     Capture--frame-->Runtime
@@ -18,7 +18,7 @@ subgraph wasmVision engine
     OpenCV<--DNN-->YuNet[YuNet Face Detection Model]
 end
 OpenCV<--CUDA-->GPU
-subgraph wasmVision processors
+subgraph procesadores wasmVision
     Runtime--frame-->facedetectyn.wasm
 end
 subgraph DJI Tello
