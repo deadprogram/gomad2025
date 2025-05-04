@@ -1,18 +1,18 @@
 ```mermaid
 flowchart LR
-    subgraph engine
+    subgraph motor wasmVision
         Capture
-        Runtime[WASM Runtime]
+        Runtime[WASM Runtime - Wazero]
         Capture--frame-->Runtime
         Capture<-->opencv
         Runtime<-->opencv
     end
     subgraph opencv
-        modules[OpenCV modules]
+        modulos[modulos OpenCV]
         FFmpeg
         GStreamer
     end
-    subgraph processors
+    subgraph procesadores wasmVision
         Runtime--frame-->tinygo-processor.wasm
         Runtime--frame-->rust-processor.wasm
         Runtime--frame-->c-processor.wasm
