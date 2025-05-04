@@ -1,5 +1,5 @@
 main:
-  logging: "info"
+  logging: "warn"
   destination: ":8080"
   cuda-enable: true
 
@@ -10,8 +10,9 @@ processing:
     - "captions.wasm"
 
 configuration:
-  ollama-model: "qnguyen3/nanollava"
-  caption-line-height: "15"
+  ollama-model: "minicpm-v"
+  ollama-prompt: "Describe esta imagen de una manera muy favorable y positiva en 6 palabras."
+  caption-line-height: "30"
   caption-size: "0.9"
 
 models:
