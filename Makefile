@@ -38,4 +38,4 @@ dronestream:
 	wasmvision run -f ./demo/videodrone/config.toml
 
 showfacedata:
-	bbolt keys facedata.db face-counter
+	bbolt keys facedata.db face-counter | xargs -L1 bbolt get facedata.db face-counter
