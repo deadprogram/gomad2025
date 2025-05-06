@@ -2,11 +2,15 @@
 logging = "warn"
 source = "udp://127.0.0.1:6789"
 capture = "ffmpeg"
+width = 1280
+height = 720
 cuda-enable = true
+datastorage = "boltdb"
 
 [processing]
 pipeline = [
-    "facedetectyn.wasm"
+    "facedetectyn.wasm",
+    "face-counter.wasm"
 ]
 
 [models]

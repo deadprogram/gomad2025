@@ -1,7 +1,7 @@
 .ONESHELL:
 
 showvideo:
-	wasmvision run -p hello -logging=error --source 2
+	wasmvision run -p hello -logging=error --source 2 --width 1280 --height 720
 
 clean:
 	rm -rf build
@@ -34,4 +34,8 @@ captions:
 	wasmvision run -f ./demo/creativecaptions/config.yaml
 
 dronestream:
+	export WASMVISION_STORAGE_BOLTDB_FILENAME="facedata.db"
 	wasmvision run -f ./demo/videodrone/config.toml
+
+showfacedata:
+	bbolt keys facedata.db face-counter
